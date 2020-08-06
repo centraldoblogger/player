@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>iCast - Soutcast & Icecast Radio Web Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/icast.min.css" rel="stylesheet" type="text/css">
+<link href="demo_files/demo.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+<div class="main-wpr">
+	<div class="icast" id="stream1"></div>
+</div>	
+<script src="js/icast.min.js"></script>
+<script>
+    $("#stream1").icast({
+	    URL: "http://radio2.suaradionanet.net:10839",
+		version: "2",
+    })
+</script>
+</body>
+</html>
